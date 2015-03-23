@@ -1,0 +1,40 @@
+package intervals;
+
+public abstract  class Interval {
+	    private Double  min;
+	    private Double max;
+	    public Interval() {
+			
+		}
+	    
+    
+	public Interval(Double min, Double max) {
+			super();
+			this.min = min;
+			this.max = max;
+		}
+
+
+	public  double midPoint() {
+		
+		return Math.abs(this.max-this.min);
+	}
+
+	public abstract boolean includes(double value); 
+	
+	public abstract boolean includes(Interval interval);
+	public abstract boolean intersectsWith(Interval interval); 
+	public abstract Interval intersection(Interval interval); 
+
+	@Override
+	public String toString() {
+		//TODO
+		return null;
+	}
+
+	@Override
+	public boolean equals(Object object) {
+		//TODO
+		return false;
+	}
+}
