@@ -5,7 +5,7 @@ public class IntervalBothOpened extends Interval{
 
 	@Override
 	public boolean includes(double value) {
-		// TODO Auto-generated method stub
+		if(value<this.get)
 		return false;
 	}
 
