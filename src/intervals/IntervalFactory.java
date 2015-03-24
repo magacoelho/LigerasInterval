@@ -2,28 +2,28 @@ package intervals;
 
 
 public class IntervalFactory {
-     private IntervalBothOpened intervalBothOpened;
-     private IntervalLeftOpened intervalleftOpened;
-     private IntervalRightOpened intervalRightOpened;
-     private IntervalUnopened intervalUnopened;
+     private static  IntervalBothOpened intervalBothOpened;
+     private static IntervalLeftOpened intervalleftOpened;
+     private static IntervalRightOpened intervalRightOpened;
+     private static IntervalUnopened intervalUnopened;
      public static Interval interval=null;
 	public static Interval getInterval(double minimum, double maximum, Opening opening) {
 		
 		switch (opening) {
 		case BOTH_OPENED:
-			  if(interval==null)
+			  if(intervalBothOpened==null)
 			  interval= new IntervalBothOpened();
 			   break;
          case LEFT_OPENED:
-        	 if(interval==null)
+        	 if(intervalleftOpened==null)
         	  interval=new IntervalLeftOpened();
         	 break;
          case RIGHT_OPENED:
-        	 if(interval==null)
+        	 if(intervalRightOpened==null)
        	        interval = new IntervalRightOpened();
        	     break;
          case UNOPENED:
-        	 if(interval==null)
+        	 if(intervalUnopened==null)
           	 interval = new IntervalUnopened(); 	   
 			break;
 		default:
