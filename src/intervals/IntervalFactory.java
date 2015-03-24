@@ -12,23 +12,25 @@ public class IntervalFactory {
 		switch (opening) {
 		case BOTH_OPENED:
 			  if(interval==null)
-			  interval= new IntervalBothOpened(minimum, maximum);
+			  interval= new IntervalBothOpened();
 			   break;
          case LEFT_OPENED:
         	 if(interval==null)
-        	  interval=new IntervalLeftOpened(minimum, maximum);
+        	  interval=new IntervalLeftOpened();
         	 break;
          case RIGHT_OPENED:
         	 if(interval==null)
-       	        interval = new IntervalRightOpened(minimum, maximum);
+       	        interval = new IntervalRightOpened();
        	     break;
          case UNOPENED:
         	 if(interval==null)
-          	 interval = new IntervalUnopened(minimum, maximum); 	   
+          	 interval = new IntervalUnopened(); 	   
 			break;
 		default:
 			break;
 		}
+		interval.setMin(minimun);
+		interval.setMax(maximun);
 		
 	return interval;
 	}
