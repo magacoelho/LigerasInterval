@@ -2,10 +2,7 @@ package intervals;
 
 public class IntervalRightOpened extends Interval{
 
-	public IntervalRightOpened(double minimum, double maximum) {
-		super(minimum, maximum);
-	}
-
+	
 	@Override
 	public boolean includes(double value) {
 		// TODO Auto-generated method stub

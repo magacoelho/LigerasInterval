@@ -2,9 +2,6 @@ package intervals;
 
 public class IntervalUnopened extends Interval{
 
-	public IntervalUnopened(double minimum, double maximum) {
-		super(minimum, maximum);
-	}
 
 	@Override
 	public boolean includes(double value) {
