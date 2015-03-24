@@ -17,7 +17,7 @@ public abstract  class Interval {
 
 	public  double midPoint() {
 		
-		return Math.abs(this.max-this.min);
+		return (this.max-this.min)/2.0;
 	}
 
 	public abstract boolean includes(double value); 
