@@ -3,7 +3,7 @@ package intervals;
 public class IntervalRightOpened extends Interval{
 
 	public IntervalRightOpened(double minimum, double maximum) {
-		// TODO Auto-generated constructor stub
+		super(minimum, maximum);
 	}
 
 	@Override
