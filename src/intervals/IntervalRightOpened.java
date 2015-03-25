@@ -5,8 +5,8 @@ public class IntervalRightOpened extends Interval{
 	
 	@Override
 	public boolean includes(double value) {
-		// TODO Auto-generated method stub
-		return false;
+		
+		return value>=this.getMin()&& value<this.getMax();
 	}
 
 	@Override
