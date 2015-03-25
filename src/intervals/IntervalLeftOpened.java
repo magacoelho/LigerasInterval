@@ -10,7 +10,7 @@ public class IntervalLeftOpened extends Interval{
 	@Override
 	public boolean includes(Interval interval) {
 		// TODO Auto-generated method stub
-		return false;
+		return  this.includes(interval.getMin())&&this.includes(interval.getMax());
 	}
 
 	@Override

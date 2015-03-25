@@ -48,13 +48,14 @@ public abstract  class Interval {
 
 	@Override
 	public String toString() {
-		//TODO
-		return null;
+	
+	return "Interval ["+ this.getMin()+ " , " + this.getMin()  + "]";
 	}
 
 	@Override
 	public boolean equals(Object object) {
-		//TODO
-		return false;
+		Interval interval = (Interval) object;
+		
+		return this.getMin().equals(interval.getMin())&&this.getMax().equals(interval.getMax());
 	}
 }
