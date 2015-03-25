@@ -29,8 +29,8 @@ public class IntervalFactory {
 		default:
 			break;
 		}
-		interval.setMin(minimum);
-		interval.setMax(maximum);
+		interval.setMin(new Double(minimum));
+		interval.setMax(new Double(maximum));
 		
 	return interval;
 	}
