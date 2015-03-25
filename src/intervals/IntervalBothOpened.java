@@ -5,7 +5,7 @@ public class IntervalBothOpened extends Interval{
 
 	@Override
 	public boolean includes(double value) {
-		if(value<this.get)
+		if(value>this.getMin()&& value>this.getMin());
 		return false;
 	}
 
