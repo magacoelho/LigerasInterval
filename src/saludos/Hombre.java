@@ -1,11 +1,16 @@
 package saludos;
 
 public class Hombre extends Persona{
+   
+	public Hombre(String name) {
+		super(name);
+		
+	}
 
 	@Override
-	public String accept(Saludador saludador) {
-		// TODO Auto-generated method stub
-		return null;
+	public String  accept(Saludador saludador) {
+		
+        return this.getName()+ 		 saludador.saludar(this);
 	}
 
 	

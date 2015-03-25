@@ -4,14 +4,17 @@ public class SaludadorMujer implements Saludador {
 
 	@Override
 	public String saludar(Hombre hombre) {
-		// TODO Auto-generated method stub
-		return null;
+	
+		return "Saludo con besos cariñososo a" + hombre.getName();
 	}
 
 	@Override
 	public String saludar(Mujer mujer) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return "Saludo con abrazo  "+ mujer.getName();
 	}
 
+	
+
+	
 }
